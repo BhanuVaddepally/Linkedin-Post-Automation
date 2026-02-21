@@ -1,11 +1,30 @@
 AI-Powered LinkedIn Post Automation with Human Approval Loop
 
-This workflow is a smart LinkedIn post automation system that turns a simple topic into a fully published post — but only after your approval.
+This project is an automated LinkedIn content publishing system that generates posts using AI and publishes them only after email approval. It combines intelligent content creation with a human-in-the-loop validation process to ensure quality and control.
 
-You start by entering the topic or theme in the chat trigger. The AI agent then generates a well-structured LinkedIn post based on a predefined system message, ensuring the tone, formatting, and style stay consistent with your content strategy.
+#How It Works :
 
-Once the post is created, it is sent to your email for review. You can either approve it or suggest changes. If you request modifications, the AI refines the post according to your feedback and sends the updated version back for review. This loop continues until you’re satisfied.
+Topic Input (Chat Trigger) :
+The user provides a topic or theme through a chat trigger.
 
-When you finally approve the content, the workflow automatically publishes it to LinkedIn — no manual copying or posting required.
+AI Content Generation :
+An AI agent generates a structured LinkedIn post based on predefined style guidelines and system instructions.
 
-This system combines AI-driven content creation with human oversight, giving you both automation and full control over what gets published.
+Email Approval System :
+The generated draft is sent to the user’s email for review.
+Reply with approval → Post is published.
+Suggest changes → AI refines the content.
+
+Refinement Loop :
+If feedback is provided, the AI updates the post and sends it again for approval.
+This continues until confirmation is received.
+
+Automatic Publishing :
+Once approved, the workflow automatically publishes the post to LinkedIn.
+
+#Tech Stack:
+n8n (Workflow Automation)
+AI Language Model (Gemini)
+Gmail API (Approval Workflow)
+LinkedIn API (Post Publishing)
+Conditional Logic Routing
